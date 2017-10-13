@@ -139,6 +139,7 @@ extern "C" {
  */
 #define	MAX_NUM_LEVEL		4
 #define	MAX_PAGE_LEVEL		2
+#define	MIN_PAGE_LEVEL		0
 typedef	int8_t level_t;
 #define	LEVEL_SHIFT(l)	(mmu.level_shift[l])
 #define	LEVEL_SIZE(l)	(mmu.level_size[l])
