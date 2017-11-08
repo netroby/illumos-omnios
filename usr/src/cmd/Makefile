@@ -478,7 +478,6 @@ i386_SUBDIRS=		\
 	bhyve		\
 	bhyveconsole	\
 	bhyvectl	\
-	bhyveload-uefi	\
 	biosdev		\
 	diskscan	\
 	nvmeadm		\
