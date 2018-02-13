@@ -43,7 +43,7 @@ typedef struct segvmm_data {
 	size_t		svmd_softlockcnt;
 } segvmm_data_t;
 
-extern int segvmm_create(struct seg *, void *);
+extern int segvmm_create(struct seg **, void *);
 
 #ifdef	__cplusplus
 }

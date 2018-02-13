@@ -96,8 +96,9 @@ static struct seg_ops segvmm_ops = {
  * Create a kernel/user-mapped segment.
  */
 int
-segvmm_create(struct seg *seg, void *argsp)
+segvmm_create(struct seg **segpp, void *argsp)
 {
+	struct seg *seg = *segpp;
 	segvmm_crargs_t *a = (struct segvmm_crargs *)argsp;
 	segvmm_data_t *data;
 
