@@ -51,9 +51,9 @@ file path=kernel/drv/ppt.conf
 file path=kernel/drv/viona.conf
 file path=kernel/drv/vmm.conf
 file path=kernel/kmdb/$(ARCH64)/vmm mode=0555
-file path=lib/$(ARCH64)/libvmmapi.so.1
-file path=lib/$(ARCH64)/llib-lvmmapi.ln
 file path=sbin/bhhwcompat mode=0555
+file path=usr/lib/$(ARCH64)/libvmmapi.so.1
+file path=usr/lib/$(ARCH64)/llib-lvmmapi.ln
 file path=usr/lib/devfsadm/linkmod/SUNW_ppt_link_i386.so mode=0755
 file path=usr/lib/devfsadm/linkmod/SUNW_viona_link_i386.so mode=0755
 file path=usr/lib/mdb/kvm/$(ARCH64)/vmm.so mode=0555
@@ -62,7 +62,7 @@ file path=usr/sbin/$(ARCH64)/bhyvectl mode=0555
 hardlink path=usr/sbin/bhyve target=../lib/isaexec
 hardlink path=usr/sbin/bhyvectl target=../lib/isaexec
 license lic_CDDL license=lic_CDDL
-link path=lib/$(ARCH64)/libvmmapi.so target=./libvmmapi.so.1
+link path=usr/lib/$(ARCH64)/libvmmapi.so target=./libvmmapi.so.1
 link path=usr/sbin/bhhwcompat target=../../sbin/bhhwcompat
 depend fmri=developer/acpi/compiler type=require
 depend fmri=system/bhyve/firmware type=require
