@@ -26,10 +26,12 @@
 #include <string.h>
 #include <errno.h>
 
-#include <sys/param.h>
-#include <sys/cpuset.h>
-#include <sys/vmm.h>
-#include <sys/vmm_dev.h>
+/*
+ * XXX - We can't include uts/i86pc/sys/vmm_dev.h yet due to type conflicts
+ */
+#define	VMM_IOC_BASE		(('V' << 16) | ('M' << 8))
+#define	VMM_VM_SUPPORTED	(VMM_IOC_BASE | 0x03)
+#define	VMM_CTL_DEV		"/dev/vmmctl"
 
 static void
 usage()

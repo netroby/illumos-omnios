@@ -33,6 +33,10 @@ ROOTSBINLINK=	$(ROOTUSRSBIN)/$(PROG)
 
 include ../Makefile.cmd
 
+#CPPFLAGS = -I$(COMPAT)/freebsd -I$(CONTRIB)/freebsd \
+# 	$(CPPFLAGS.master) -I$(SRC)/uts/i86pc \
+# 	-I$(COMPAT)/freebsd/amd64 -I$(CONTRIB)/freebsd/amd64
+
 all:	$(ROOTFS_PROG)
 
 install: all $(ROOTSBINPROG) $(ROOTSBINLINK)
