@@ -54,8 +54,6 @@ file path=kernel/kmdb/$(ARCH64)/vmm mode=0555
 file path=sbin/bhhwcompat mode=0555
 file path=usr/lib/$(ARCH64)/libvmmapi.so.1
 file path=usr/lib/$(ARCH64)/llib-lvmmapi.ln
-file path=usr/lib/devfsadm/linkmod/SUNW_ppt_link_i386.so mode=0755
-file path=usr/lib/devfsadm/linkmod/SUNW_viona_link_i386.so mode=0755
 file path=usr/lib/mdb/kvm/$(ARCH64)/vmm.so mode=0555
 file path=usr/sbin/$(ARCH64)/bhyve mode=0555
 file path=usr/sbin/$(ARCH64)/bhyvectl mode=0555
